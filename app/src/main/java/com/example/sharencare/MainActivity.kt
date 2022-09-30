@@ -51,5 +51,12 @@ class MainActivity : AppCompatActivity() {
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
         supportFragmentManager.beginTransaction().replace(R.id.frame_layout,Favorites_Fragment()).commit()
+
+        var badge_notifications = navView.getOrCreateBadge(R.id.nav_notifications)
+        badge_notifications.isVisible = true
+        badge_notifications.number = 1
+
+        var badge_place = navView.getOrCreateBadge(R.id.nav_place)
+        badge_place.isVisible = true
     }
 }
