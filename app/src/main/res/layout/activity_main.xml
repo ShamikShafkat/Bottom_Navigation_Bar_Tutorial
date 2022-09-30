@@ -47,6 +47,7 @@
         app:backgroundTint="@color/bottom_navigation_background"
         app:labelVisibilityMode="labeled"
         app:itemIconTint="@drawable/bottom_navigation_icon_color"
+        android:background="@drawable/round_corners"
         app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>
